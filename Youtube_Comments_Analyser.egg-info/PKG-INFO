@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Youtube_Comments_Analyser
+Version: 0.0.1
+Author: Adhithya G Nair
+Author-email: adhithyagnair97@gmail.com
+Requires-Dist: pandas
+Requires-Dist: langchain
+Requires-Dist: streamlit
+Requires-Dist: python-dotenv
+Requires-Dist: PyPDF2
+Requires-Dist: matplotlib

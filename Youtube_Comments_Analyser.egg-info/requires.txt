@@ -1,0 +1,6 @@
+pandas
+langchain
+streamlit
+python-dotenv
+PyPDF2
+matplotlib
