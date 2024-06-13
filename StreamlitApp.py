@@ -1,6 +1,7 @@
 import streamlit as st
 from src.youtube.Sentiment_Analyser_app import sentiment_analysis
 from PIL import Image
+from src.youtube.LLM_App import llm_app_sentiments
 
 
 
@@ -10,6 +11,8 @@ from PIL import Image
 
 
 st.title('Youtube CommentSentiment Analysis App')
+
+
 
 
 video_id=st.text_input('Enter the Video Id Here')
@@ -24,6 +27,8 @@ submit=st.button('Click to see results')
 
 
 if submit :
+
+
 
 
     
@@ -60,6 +65,26 @@ if submit :
     with col3:
         st.image(neg_image,width=100)
         st.metric(label='Negative',value=neg_count)
+
+
+
+    with st.sidebar:
+        st.title('Comment Summary')
+
+        app=llm_app_sentiments()
+
+        text=app.text_extractor(data)
+
+        chunks=app.text_splitter(text)
+
+        summary=app.summary(chunks)
+
+
+        st.write(summary)
+
+
+
+
 
 
 

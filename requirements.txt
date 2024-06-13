@@ -5,5 +5,11 @@ matplotlib
 nltk
 streamlit
 python-dotenv
+langchain
+chromadb
+faiss-cpu
+langchain_google_genai
+langchain_core
+langchain_community
 
 -e.

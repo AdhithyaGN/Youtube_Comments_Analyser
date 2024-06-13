@@ -6,4 +6,8 @@ Youtube_Comments_Analyser.egg-info/dependency_links.txt
 Youtube_Comments_Analyser.egg-info/requires.txt
 Youtube_Comments_Analyser.egg-info/top_level.txt
 src/__init__.py
+src/youtube/LLM_App.py
+src/youtube/Sentiment_Analyser_app.py
 src/youtube/__init__.py
+src/youtube/logger.py
+src/youtube/utils.py
