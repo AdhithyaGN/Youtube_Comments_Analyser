@@ -39,6 +39,7 @@ class llm_app_sentiments:
 
         template="""You are a youtube video comment analyser and summarizer who will analyse the comments and correctly deliver the summary including feedbacks from the viewers,positive comments summary,negative comments summary
         what are the changes has to be done to correct in making the video,important keywords from the comments etc.All comments in a text form is given below
+        Note that the omments can be any language English,Malayalam,Hindi,other foreign languages include spanish.Do your best to read any language.
         text:{text}"""
 
         prompt=PromptTemplate(input_variables=['text'],template=template)
