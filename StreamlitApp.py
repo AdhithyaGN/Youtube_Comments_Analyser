@@ -26,7 +26,7 @@ submit=st.button('Click to see results')
 if submit :
 
 
-    st.header('Sentiment_Counts')
+    
 
     
 
@@ -44,6 +44,8 @@ if submit :
     pos_image=Image.open("C:/Users/S K E F/Desktop/GenAI/projects/Youtube_Comments_Analyser/icons/pos.png")
     neg_image=Image.open("C:/Users/S K E F/Desktop/GenAI/projects/Youtube_Comments_Analyser/icons/neg.png")
     neu_image=Image.open("C:/Users/S K E F/Desktop/GenAI/projects/Youtube_Comments_Analyser/icons/neu.png")
+
+    st.header('Sentiment_Counts')
 
     col1,col2,col3=st.columns(3)
 
